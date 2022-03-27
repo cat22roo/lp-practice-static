@@ -11,11 +11,11 @@ jobs:
       run: |
         GLOBAL_IP=`curl inet-ip.info`
         curl -X POST https://api.xrea.com/v1/tool/ssh_ip_allow \
-        -d "account=cat2roo" \
+        -d "account=cat22roo" \
         -d "server_name=s223.xrea.com" \
         -d "api_secret_key=NPzM3J3rXFaHsnMFEDIcqwXaohaAoYNj" \
         -d "param[addr]=${GLOBAL_IP}"
-        
+    
     - name: 📂 Sync files
       env:
         SSH_KEY: ${{ secrets.SSH_KEY }}
